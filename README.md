@@ -8,6 +8,7 @@
   - [gettitle.js](#gettitlejs)
   - [gethref.js](#gethrefjs)
   - [search.js](#searchjs)
+  - [getsearchresult.js](#getsearchresultjs)
 
 # Environment
 - node v8.9.0
@@ -43,3 +44,6 @@ puppeteerのベース
 
 ## search.js
 検索結果項目１番目を表示
+
+## getsearchresult.js
+指定した分の検索結果のリンクとテキストを返す
