@@ -7,7 +7,6 @@ const devices = require('puppeteer/DeviceDescriptors');
 // ===========================================
 const targetUrl = 'http://example.com/';
 const mobileSwitch = true;
-const deviceName = 'iPhone 6';
 const pcSetting = {
 	'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
 	'viewport': {
@@ -15,8 +14,9 @@ const pcSetting = {
 		'height': 820
 	}
 };
+const deviceSetting = devices['iPhone 6'];
 // basic認証
-const isBasic = true;
+const isBasic = false;
 const basicUsername = 'user';
 const basicPassword = 'pass';
 
@@ -126,5 +126,5 @@ const fn = async (url, emulate, category) => {
 
 fn(targetUrl, pcSetting, 'pc');
 if (mobileSwitch) {
-	fn(targetUrl, devices[deviceName], 'sp');
+	fn(targetUrl, deviceSetting, 'sp');
 }
