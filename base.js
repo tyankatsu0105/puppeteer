@@ -14,10 +14,6 @@ const pcSetting = {
 	}
 };
 const deviceSetting = devices['iPhone 6'];
-// basic認証
-const isBasic = false;
-const basicUsername = 'user';
-const basicPassword = 'pass';
 
 const fn = async (emulate) => {
 	const browser = await puppeteer.launch({
