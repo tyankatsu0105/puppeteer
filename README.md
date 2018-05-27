@@ -6,6 +6,7 @@
   - [base.js](#basejs)
   - [crawl.js](#crawljs)
   - [gettitle.js](#gettitlejs)
+  - [gethref.js](#gethrefjs)
 
 # Environment
 - node v8.9.0
@@ -35,3 +36,6 @@ puppeteerのベース
 
 ## gettitle.js
 ページのエレメント取得の例としてtitleのtextを取得
+
+## gethref.js
+複数の要素の複数のプロパティを取得してjsonに排出
